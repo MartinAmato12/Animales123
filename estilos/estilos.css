@@ -73,8 +73,6 @@ nav ul li {
     list-style: none;
     padding: 40px;
 
-
-
 }
 
 #main {
@@ -183,8 +181,8 @@ a:hover {
     color: black;
     background-color: beige;
     padding: 40px;
+    transform: scale(0);
 }
-
 
 
 
@@ -217,4 +215,27 @@ h3 {
     list-style: none;
     padding: 40px;
 }
+
+.box{
+    border-radius: 6px;
+    height: 80px;
+    width: 100px;
+    margin:60px auto;
+    }
+    .box1{
+    background-color: mediumpurple;
+    }
+    .box2{
+    background-color: chocolate;
+    }
+
+    .box:hover{
+        transform: scale(4);
+    }
+
+    .box2{
+        transition-property: all;
+        transition-duration: 5s;
+        transform: translate(200px);
+    }
 
