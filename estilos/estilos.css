@@ -120,7 +120,7 @@ header {
     font-size: large;
     justify-content: center;
 
-    
+
 
 }
 
@@ -178,15 +178,12 @@ nav ul li {
 }
 
 a {
-    color: black 
-    text-decoration none;
+    color: black text-decoration none;
 }
 
 a:hover {
     color: black;
     background-color: beige;
-    padding: 40px;
-    transform: scale(0);
 }
 
 footer {
@@ -200,9 +197,110 @@ footer {
 
 }
 
+consultas @font-face {
+    font-family: 'handwriting';
+    src: url('fonts/journal-webfont.woff2') format('woff2'),
+        url('fonts/journal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'typewriter';
+    src: url('fonts/veteran_typewriter-webfont.woff2') format('woff2'),
+        url('fonts/veteran_typewriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+form {
+    position: relative;
+    width: 740px;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    background: rgb(238, 238, 238) url(../img/background.jpg);
+}
 
 h3 {
+    font: 1em "typewriter", monospace;
+    align-self: end;
     font-size: 35px;
+}
+
+#message {
+    grid-row: 1 / 5;
+}
+
+#from,
+#reply {
+    display: flex;
+}
+
+label {
+    font: .8em "typewriter", sans-serif;
+}
+
+input,
+textarea {
+    font: 1.4em/1.5em "handwriting", cursive, sans-serif;
+    border: none;
+    padding: 0 10px;
+    margin: 0;
+    width: 80%;
+    background: none;
+}
+
+input:focus,
+textarea:focus {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+
+textarea {
+    display: block;
+
+    padding: 10px;
+    margin: 10px 0 0 -10px;
+    width: 100%;
+    height: 90%;
+
+    border-right: 1px solid;
+
+    overflow: auto;
+}
+
+button {
+    padding: 5px;
+    font: bold .6em sans-serif;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-1.5deg);
+}
+
+button:after {
+    content: " >>>";
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #000;
+    color: #FFF;
+}
+
+#extintostext {
+    color: black;
+    font-size: 150%;
+    background-color: aquamarine;
+    margin: auto;
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+    width: 2500px;
+    padding: 4px;
 }
 
 
@@ -230,33 +328,80 @@ h3 {
     padding: 40px;
 }
 
+
+
+
+
+
 .box {
-    border-radius: 6px;
-    height: 80px;
-    width: 100px;
-    margin: 60px auto;
+    border-radius: 8px;
+    margin: 100px auto;
+
+    position:relative;
+    font-size:25px;
+    border:2px solid #000000;
+    margin:10px;
+    padding:10px;
+    height:200px;
+    width:400px;
+    background-color:white;
+
+    border:1px solid black;
+	background-color:green;
+	margin-right:10px;
+	margin-bottom:10px;
+
+    font-size:16px;
+	text-align:justify;
+    justify-content: space-evenly ;
 }
 
 .box1 {
     background-color: mediumpurple;
+    transition-property: all;
+    transition-duration: 5s;
+    transform: translate(200px);
+
+
+    
 }
 
 .box2 {
     background-color: chocolate;
-}
-
-.box:hover {
-    transform: scale(4);
-}
-
-.box2 {
     transition-property: all;
     transition-duration: 5s;
     transform: translate(200px);
 }
 
-------------------- 
-nav ul,
+.box3 {
+    background-color: cornflowerblue;
+    transition-property: all;
+    transition-duration: 5s;
+    transform: translate(200px);
+}
+.box4 {
+    background-color: darkseagreen;
+    transition-property: all;
+    transition-duration: 5s;
+    transform: translate(200px);
+}
+.box5 {
+    background-color: gold;
+    transition-property: all;
+    transition-duration: 5s;
+    transform: translate(200px);
+}
+.box6 {
+    background-color: olive;
+    transition-property: all;
+    transition-duration: 5s;
+    transform: translate(200px);
+}
+.box:hover {
+    transform: scale(4);
+}
+
+------------------- nav ul,
 .ad,
 article,
 
@@ -323,7 +468,7 @@ img {
 @media (min-width:768px) {
     .envoltura {
         background: rgb(232, 229, 20);
-        background: linear-gradient(28deg, rgb(27, 232, 20) 32%, rgb(152, 249, 204) 50%, rgb(212, 240, 57) 71%, rgba(195, 190, 18, 0.45451684091605393) 100%);
+        background: linear-gradient(28deg, rgba(195, 190, 18, 0.45451684091605393) 32%, beige 40%, rgb(152, 249, 204) 50%, beige 71%, rgba(195, 190, 18, 0.45451684091605393) 100%);
         margin-bottom: 1.5em;
         grid-template-columns: 1fr 4fr 1fr;
 
@@ -364,7 +509,7 @@ img {
     footer {
         margin-top: 1.5em;
         background: rgb(232, 229, 20);
-        background: linear-gradient(28deg, rgb(27, 232, 20) 32%, rgb(152, 249, 204) 50%, rgb(212, 240, 57) 71%, rgba(195, 190, 18, 0.45451684091605393) 100%);
+        background: linear-gradient(28deg, rgba(195, 190, 18, 0.45451684091605393) 32%, beige 40%, rgb(152, 249, 204) 50%, beige 71%, rgba(195, 190, 18, 0.45451684091605393) 100%);
     }
 }
 
