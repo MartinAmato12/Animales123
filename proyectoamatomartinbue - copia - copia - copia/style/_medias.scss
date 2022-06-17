@@ -1,0 +1,122 @@
+@import "generales";
+@import "nav";
+
+
+
+
+
+@media (min-width:500px) {
+    .envoltura {
+        margin: 0;
+        grid-template-areas: "header header"
+            "nav nav"
+            "contenido sidebar"
+            "ad ad"
+            "galeria galeria"
+            "footer footer";
+    }
+
+    nav ul {
+        font-display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 350px;
+        height: 300px;
+    }
+
+    footer {
+        margin-top: 0
+    }
+
+    ;
+}
+
+@media (min-width:768px) {
+    .envoltura {
+        background: rgb(232, 229, 20);
+        background: linear-gradient(28deg, rgba(195, 190, 18, 0.45451684091605393) 32%, beige 40%, rgb(152, 249, 204) 50%, beige 71%, rgba(195, 190, 18, 0.45451684091605393) 100%);
+        margin-bottom: 1.5em;
+        grid-template-columns: 1fr 4fr 1fr;
+
+        grid-template-areas: "header header header"
+            "nav contenido sidebar"
+            "nav contenido ad"
+            "galeria galeria galeria"
+            "footer footer footer";
+    }
+
+    nav ul {
+        flex-direction: column;
+        border: 2px solid goldenrod
+    }
+
+    header,
+    h1,
+    h2,
+    a {
+        color: #3a3548;
+    }
+
+    .padre {
+        background-color: #3a3548;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        margin: 3em;
+    }
+
+    img {
+        border: 5px solid goldenrod;
+        width: 200px;
+        height: 150px;
+    }
+
+    footer {
+        margin-top: 1.5em;
+        background: rgb(232, 229, 20);
+        background: linear-gradient(28deg, rgba(195, 190, 18, 0.45451684091605393) 32%, beige 40%, rgb(152, 249, 204) 50%, beige 71%, rgba(195, 190, 18, 0.45451684091605393) 100%);
+    }
+}
+
+@media(min-width:1024px) {
+    body {
+
+
+
+        background-color: beige;
+        overflow-x: hidden !important;
+        line-height: [1.15]( //1.15); 
+
+                {
+
+                -ms-text-size-adjust: 100%;
+
+                -webkit-text-size-adjust: 100%;
+
+                overflow-x: hidden;
+            }
+
+
+
+        }
+
+        .envoltura {
+            color: rgb(176, 109, 17)
+        }
+
+        .padre {
+            padding: 1.5em;
+            grid-template-columns: 1fr 1fr;
+            height: auto;
+            margin: 0;
+        }
+
+        img {
+            width: 475px;
+            height: 400px;
+            margin-top: 20px;
+        }
+
+    }

@@ -1,0 +1,30 @@
+.contenido {
+    grid-area: contenido;
+}
+
+.cat {
+    height: 800px;
+    width: 800px;
+    display: block;
+    margin: 0px auto;
+}
+
+.separador {
+    color: gray;
+}
+
+.consultas @font-face {
+    font-family: 'handwriting';
+    src: url('fonts/journal-webfont.woff2') format('woff2'),
+        url('fonts/journal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'typewriter';
+    src: url('fonts/veteran_typewriter-webfont.woff2') format('woff2'),
+        url('fonts/veteran_typewriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
