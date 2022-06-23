@@ -1,0 +1,24 @@
+
+
+
+
+videos * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav {
+    grid-area: nav
+}
+
+#lista1 li {
+    display: inline;
+    padding-left: 200px;
+    padding-right: 3px;
+    background-color: aquamarine;
+}

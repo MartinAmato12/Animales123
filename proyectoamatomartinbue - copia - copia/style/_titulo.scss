@@ -1,0 +1,25 @@
+#{brand}-title-primary {
+
+    font-size: $font size;
+    $color: $primary;
+    border-bottom: 1px solid lighten($color: $primary, $amount: 20);
+    letter-spacing: 4px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        background: $primary;
+    }
+}
+
+
+
+
+
+
+&__body {
+    height: 60px;
+    text-align: center;
+    background:map-get($map: $palette, $key: "primary");
+    line-height: 60px;
+}
