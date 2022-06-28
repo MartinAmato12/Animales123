@@ -1,0 +1,15 @@
+.box {
+  border-radius: 10px;
+}
+
+pre span.stx-string {
+  color: green;
+}
+
+pre span.stx-comment {
+  color: yellow;
+}
+
+pre span.stx-variable {
+  color: blue;
+}/*# sourceMappingURL=mixin.css.map */
